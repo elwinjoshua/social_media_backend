@@ -1,0 +1,48 @@
+GET http://localhost:8080
+###
+GET http://localhost:8080/err
+###
+GET http://localhost:8080/test
+###
+DELETE http://localhost:8080/test
+###
+POST http://localhost:8080/users/
+
+{
+    "Name": "Tony Santiago",
+    "Email": "test@example.com",
+    "Password": "1234",
+    "Age": 22
+}
+
+###
+GET http://localhost:8080/users/test@example.com
+###
+DELETE http://localhost:8080/users/test@example.com
+###
+DELETE http://localhost:8080/posts/test@example.com
+###
+POST http://localhost:8080/users/
+
+{
+    "Name": "Elwin Joshua",
+    "Email": "test2@example.com",
+    "Password": "12345",
+    "Age": 25
+}
+
+###
+POST http://localhost:8080/users/
+
+{
+    "Name": "Elwin Joshua",
+    "Email": "test3@example.com",
+    "Password": "12345",
+    "Age": 25   
+}
+###
+
+###
+DELETE http://localhost:8080/users/test2@example.com
+
+
