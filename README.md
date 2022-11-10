@@ -12,5 +12,11 @@ Goal of this project is to make a user to able to create posts and update their 
  go install github.com/elwinjoshua/social_media_backend/internal/database
  
  ### build from the source code
- git clone 
+ git clone https://github.com/elwinjoshua/social_media_backend.git
+ 
+ cd social_media_backend
+ 
+ go build && ./social_media_backend
+ 
+ ### This code will start host server on port 8080. You can make calls to the server through API calls (i have used REST Client) or through your local environments REST API.
  
